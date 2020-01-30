@@ -1,0 +1,38 @@
+body {
+    font-family: 'Merriweather';  
+}
+
+header {
+    background-color: blue;
+    height: 135px;
+    margin-top: -23px;
+    margin-left: -10px;
+    margin-right: -8px;
+}
+
+h1 {
+    font-size: 35px;
+    width: 300px;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+#sous_header {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -60px;
+}
+
+.page {
+    padding-right: 20px;
+}
+
+.texte_menu {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.texte_menu:hover {
+    color: black;
+}
