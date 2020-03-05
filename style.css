@@ -1,10 +1,6 @@
 body {
-    font-family: 'Rubik';  
-    background-image: url(Images/background.png);
-    background-attachment:fixed;
-    background-position: center;
-    background-repeat:no-repeat;
-    background-size:auto;
+    font-family: 'Rubik';
+    background-image: radial-gradient(circle at center, #90a4ae, #263238);
     margin-left: 40px;
 }
 
@@ -34,6 +30,13 @@ h1 {
 h2 {
     font-size: 30px;
     color: white;   
+    font-family: 'Rubik', sans-serif;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 27px;
+    color: white;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -98,9 +101,7 @@ p {
 }
 
 .border {
-    border-style: solid;
-    border-width: 3px;
-    border-color: #7b1fa2;
+border-bottom: solid 3px white;
 }
 
 .txt_sous_menu {
@@ -125,6 +126,21 @@ p {
     border-color: #6200ea;
 }
 
+.liste {
+    width: 40%;
+    background-color: rgba(2, 119, 189, 0.7);
+    border-style: ridge;
+    border-width: 4px;
+    border-color: #6200ea;
+}
+
+li {
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    padding: 7px;
+    padding-top: 0px;
+}
 
 footer {
     background-image: url(Images/background_footer.png);
@@ -133,6 +149,14 @@ footer {
     height: 200px;
     margin-top: 30px;
     position: absolute; left: 0; right: 0;
+}
+
+.falcon9 {
+    position: absolute;
+    width: 700px;
+    height: 450px;
+    margin-left: 570px;
+    margin-top: -470px;
 }
 
 .img_corps {
@@ -160,7 +184,7 @@ footer {
 @media screen and (min-width: 1366px) {
     .img_coiffe {
         position: absolute;
-        margin-left: 550px;
+        margin-left: 650px;
         margin-top: -420px;
         height: 400px;
         width: 600px;
@@ -230,3 +254,4 @@ hr {
     background-color: #6200ea;
     color: #6200ea;
 }
+
