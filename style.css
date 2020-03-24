@@ -1,257 +1,157 @@
 body {
-    font-family: 'Rubik';
-    background-image: radial-gradient(circle at center, #90a4ae, #263238);
-    margin-left: 40px;
+    background-color: grey;
+    font-family: 'Rubik', Arial
 }
 
-body ::selection {
-    color: black;
-    background-color: #18ffff;
-    position: relative;
-    
+H1::selection {
+    color: #00bfa5;
+    background-color: black;
 }
 
-header {
-    height: 135px;
-    margin-top: -23px;
-    margin-left: -40px;
-    margin-right: -8px;
-    background-color: #01579b;
+p::selection {
+    color: #00bfa5;
+    background-color: black;
 }
 
-h1 {
-    font-size: 35px;
-    width: 400px;
-    padding-left: 40px;
-    padding-top: 40px;
-    color: white;
-}
-
-h2 {
-    font-size: 30px;
-    color: white;   
-    font-family: 'Rubik', sans-serif;
-    text-decoration: underline;
-}
-
-h3 {
-    font-size: 27px;
-    color: white;
-    font-family: 'Rubik', sans-serif;
+a::selection {
+    color: #00bfa5;
+    background-color: black;
 }
 
 a {
-    transition: all 0.3s ease;
     text-decoration: none;
-    color: white;
 }
 
-a:hover {
-    color: black;
-}
-
-p {
-    font-size: 20px;
-    text-align: justify;
-    color: white;
-    padding: 7px;
-    padding-top: 0px;
-}
-
-.page {
-    padding-right: 20px;
-}
-
-.eau_sucre {
-    display: flex;
-    flex-direction: row;
-    margin-left: 400px;
-    margin-top: -65px;
-    width: 800px; 
-}
-
-.menu {
-    padding-left: 60px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+nav {           /* Les propriétés du menu */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: -12px;
+    padding: 20px;
+    width: 320px;
     z-index: 2;
 }
 
-.sous_menu {
-    background-color: #1a237e;
-    display: none;
+nav.active {
+    background-color: #181818;
+    border-right-color: rgb(52, 252, 242);
+    border-right-style: solid;
+    border-right-width: 2px;
 }
 
-.menu:hover .sous_menu{
-    display: flex;
-    flex-direction: column;
+.burger {  /* Les propriétés de l'icône du menu déroulant */
+    width: 42px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
 }
-
-.txt_menu {
-    display: block;
-    color: white;
-    font-size: 30px;
-    text-decoration: none;
-    padding: 2px;
-}
-
-.txt_menu:hover {
-    color:black;
-    background-color: #0091ea;
-}
-
-.border {
-border-bottom: solid 3px white;
-}
-
-.txt_sous_menu {
-    display: flex;
-    flex-direction: column;
-    font-size: 27px;
-    text-decoration: none;
-    color: white;
-    padding-top: 10px;
-}
-
-.txt_sous_menu:hover {
-    color: black;
-    background-color: #4dd0e1;
-}
-
-.article {
-    width: 40%;
-    background-color: rgba(2, 119, 189, 0.7);
-    border-style: ridge;
-    border-width: 4px;
-    border-color: #6200ea;
-}
-
-.liste {
-    width: 40%;
-    background-color: rgba(2, 119, 189, 0.7);
-    border-style: ridge;
-    border-width: 4px;
-    border-color: #6200ea;
-}
-
-li {
-    font-size: 20px;
-    text-align: justify;
-    color: white;
-    padding: 7px;
-    padding-top: 0px;
-}
-
-footer {
-    background-image: url(Images/background_footer.png);
-    margin: -40px;
-    width: 103%;
-    height: 200px;
-    margin-top: 30px;
-    position: absolute; left: 0; right: 0;
-}
-
-.falcon9 {
-    position: absolute;
-    width: 700px;
-    height: 450px;
-    margin-left: 570px;
-    margin-top: -470px;
-}
-
-.img_corps {
-    height: 600px;
-    width: 400px;
-    margin-left: 800px;
-    margin-top: -434px;
-}
-
-@media screen and (min-width: 1366px) {
-    .img_corps {
-        position: absolute;
-        margin-left: 650px;
-        margin-top: -619px;
-    }
-}
-
-.img_coiffe {
-    height: 600px;
-    width: 900px;
-    margin-left: 800px;
-    margin-top: -359px;
-}
-
-@media screen and (min-width: 1366px) {
-    .img_coiffe {
-        position: absolute;
-        margin-left: 650px;
-        margin-top: -420px;
-        height: 400px;
-        width: 600px;
-    }
-}
-
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
+.burger span {  /* Ce que fait l'icône du menu quand elle est cliquée */
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.lightbox_img1 {
-    position: inherit;
-    height: 950px;
-    width: 625px;
-    left: 35%;
-    margin-top: 0.5%;
-}
-
-@media screen and (min-width: 1366px) {
-    .lightbox_img1 {
-        position: inherit;
-        height: 650px;
-        width: 525px;
-        left: 30%;
-    }
-}
-
-.lightbox_img2 {
-    position: inherit;
-    width: 1400px;
-    height: 850px;
-    margin-top: 2.5%;
-    margin-left: 14%;
-}
-
-@media screen and (min-width: 1366px) {
-    .lightbox_img2 {
-        position: inherit;
-        height: 650px;
-        width: 1200px;
-        margin: 0px;
-        margin-left: 5%;
-
-    }
-}
-
-.lightbox:target {
-    outline: none;
+    height: 4px;
+    background-color:white;
     display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.5s ease-in-out;
+
+}
+.burger span::before, .burger span::after{   /* Ce qu'il se passe avant et après que le bouton soit cliqué */
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color:white;
+  transition: transform 0.5s ease-in-out;
+
+}
+.burger span::before{
+   transform: translateY(-10px);    
+}
+.burger span::after{
+   transform: translateY(10px);
 }
 
-em {
-    font-style: italic;
+.burger.active span{
+  background-color: transparent;
+}
+.burger.active span::before{
+  transform: translateY(0px) rotateZ(45deg);
+}
+.burger.active span::after{
+  transform: translateY(0px) rotateZ(-45deg);  
 }
 
-hr {
-    margin-left: -40px;
-    margin-right: -6px;
-    height: 3px;
-    background-color: #6200ea;
-    color: #6200ea;
+.sidebar span{
+  
+  width: 200px;
+  height: 10000px;
+  color: transparent;
 }
 
+.sidebar.active span {
+  color: black;
+}
+
+#reponse{
+    text-align: center;
+   }
+   
+   #reponse span{  /* Cache de base le menu */
+     display:none;
+   }
+
+   #menu {  /* Cache les puces de la liste du menu */
+    list-style-type: none;
+    display: none;
+}
+
+#menu .active {                 /* Souligne le nom de la section quand on est dessus */
+    text-decoration: underline;
+}
+
+#menu a {  
+    font-size: 25px;
+    margin: -35px;
+    color: white;
+}
+
+#menu li {      /* Décale les noms de partie de 10px du bord du menu */
+    padding: 10px 0px;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+#accueil a{
+    margin-left: 50px;
+    color: white;
+    font-size: 50px;
+}
+
+#eau a{
+    font-size: 40px;
+    color: #34FCF2;
+}
+
+#sucre a{
+    font-size: 40px;
+    color: #34FCF2;
+}
+
+#header {
+    background-color: #252525;
+    position: fixed;
+    margin-top: -8px;
+    margin-left: -8px;
+    width: 1920px;
+    height: 200px;
+}
+    
+h1 {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 45px;
+    color: white;
+}

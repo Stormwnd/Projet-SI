@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet"> 
-        <link rel="icon" type="image/x-icon" href="Images/icon.png" />
-        <title>Notre Fusée</title>
-    </head>
-    <body>
-        <header>
-            <div id="header">
-                <h1>Nos Projets :</h1>
-                <div class="eau_sucre">
-                    <div class="menu">
-                        <a class="txt_menu border" href="Index.html">Propulsion à eau ↓</a>
-                        <div class="sous_menu ">
-                            <a class="txt_sous_menu border" href="Inspirations_eau.html">Inspirations</a>
-                            <a class="txt_sous_menu border" href="Schémas_eau.html">Schémas</a>
-                            <a class="txt_sous_menu border" href="Pièces_eau.html">Pièces</a>
-                            <a class="txt_sous_menu border" href="Lancements_eau.html">Lancements</a>
-                        </div>
-                    </div>
-                    <div class="menu">
-                        <a class="txt_menu border" href="Index.html">Propulsion au sucre ↓</a>
-                        <div class="sous_menu ">
-                            <a class="txt_sous_menu border" href="Inspirations_sucre.html">Inspirations</a>
-                            <a class="txt_sous_menu border" href="Schémas_sucre.html">Schémas</a>
-                            <a class="txt_sous_menu border" href="Pièces_sucre.html">Pièces</a>
-                            <a class="txt_sous_menu border" href="Lancements_sucre.html">Lancements</a>
-                        </div>
-                    </div>   
-                </div>
-            </div>
-        </header>
-        <h2>Description des projets :</h2>
-        <h3>La fusée à eau : </h3>
-        <article class="article">
-            <p>Comme toute les fusées, la notre repose sur la troisième loi de Newton, autrement appelée le principe 
-            d'action-réaction. <br>
-            <em>« L'action est toujours égale à la réaction ; c'est-à-dire que les actions de deux corps l'un sur 
-            l'autre sont toujours égales et de sens contraires.»<br>  — Isaac Newton</em><br>
-            Généralement, on dit que "Tout corps A exerçant une force sur un corps B subit une force d'intensité égale, 
-            de même direction mais de sens opposé, exercée par le corps B". <br>
-            Le but de notre fusée à eau sera donc d'éjecter le plus rapidement possible l'eau, ce qui propulsera donc la fusée
-            en l'air. Pour cela, nous utiliserons de l'air mis sous pression grâce à un compresseur à air. Nous visons une 
-            pression d'environ 7 bars. Cepandant, la phase de propulsion ne durera que quelques dixièmes de secondes, et la fusée
-            continuera son ascension grâce à l'énergie cinétique aquise. 
-            </p>
-        </article>
-        <img src="Images/falcon9.jpg" class="falcon9" alt="Falcon9 Image">
-        <h3></h3>
+<head>
+  <meta charset="utf-8">
+  <title>Nos Projets</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="Images/icon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="burger">
+            <span></span>
+        </div>
+        
+        <ul id="menu">
+            <il id="accueil">
+                <a class="active" href="Index.html">Accueil</a>
+            </il>
+            <li id="eau">
+                <a href="index_eau.html">Fusée à l'eau</a>
+            </li>
+            <li>
+                <a href="intro.html">Inspirations</a>
+            </li>
+            <li>
+                <a href="internet.html">Schémas</a>	
+            </li>	
+            <li>
+                <a href="web.html">Pièces</a>
+            </li>	
+            <li>
+                <a href="crypto.html">Lancements</a>
+            </li>
+            <li id="sucre">
+                <a href="index_sucre.html">Fusée au sucre</a>
+            </li>
+            <li>
+                <a href="intro.html">Inspirations</a>
+            </li>
+            <li>
+                <a href="internet.html">Schémas</a>	
+            </li>	
+            <li>
+                <a href="web.html">Pièces</a>
+            </li>	
+            <li>
+                <a href="crypto.html">Lancements</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="sidebar">
+        <span>
+        </span>
+    </div>
+    <div id="header">
+        <h1>Nos Projets</h1>
+    </div>
 
 
-        <footer>
-           
-        </footer>
-    </body>
+
+    <script src="app.js"></script>
+</body> 
 </html>
